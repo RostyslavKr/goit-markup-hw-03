@@ -22,11 +22,14 @@
     
     
 }
+.image{
+    display: block;
+}
 .container{
     width: 1200px;
     margin: 0 auto;
-    padding-left: auto;
-    padding-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
     
 }
 
@@ -77,8 +80,8 @@
     display: flex;
     list-style: none;
     padding-left: 0;
-    margin: 0 auto;
-    margin-left: 331px;
+    margin: 0;
+    margin-left: auto;
     
     
 }
@@ -129,6 +132,7 @@
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.06em;
+    margin-bottom: 30px;
     
     
 }
@@ -146,8 +150,8 @@
 
 /* Особливості */
 .specialy{
-  
-    
+ padding-top: 94px;
+ padding-bottom: 94px; 
 }
 .title-specialy{
     opacity: 0;
@@ -156,10 +160,7 @@
     display: flex;
     list-style: none;
     padding-left: 0;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    margin: 0 auto;
-    justify-content: center;
+    margin: 0;
 }
 
 .item-specialy{
@@ -233,6 +234,7 @@
 .teams{
     background-color: var(--border-color);
     margin: auto;
+    padding-top: 94px;
     padding-bottom: 94px;
 }
 
@@ -246,7 +248,7 @@
     color: var(--primary-color);
     margin-top: 0;
     margin-bottom: 50px;
-    padding-top: 94px;
+    
     
 }
 
@@ -302,7 +304,8 @@
 .footer{
     background-color: var(--header-color);
     margin: auto;
-   
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .container-footer{
     justify-content: flex-start;
@@ -314,7 +317,7 @@
     font-size: 26px;
     font-weight: var(--bold-font);
     color: var(--text-color);
-    padding-top: 60px;
+    
     
     
 }
@@ -323,13 +326,13 @@
 }
 .address{
    margin-top: 20px;
-   padding-bottom: 60px;
+   
    
 }
 .list-address{
     list-style: none;
     padding-left: 0;
-    
+    margin: 0;
     
 }
 .item-address{
@@ -339,6 +342,9 @@
     letter-spacing: 0.03em;
     font-weight: var(--normal-font);
     font-style: normal;
+}
+.item-address:not(:last-child){
+    margin-bottom: 9px;
 }
 
 .kyiv{
@@ -365,7 +371,7 @@
 
 .projects{
  
-    
+   
     
 }
 .title-none{
@@ -375,16 +381,14 @@
     display: flex;
     list-style: none;
     justify-content: center;
-    margin-top: 94px;
-    margin-bottom: 50px;
+    padding-top: 100px;
+    padding-left: 0;
+    margin: 0;
+    padding-bottom: 50px;
 }
 
-.item-kind{
+.item-kind:not(:last-child){
     margin-right: 8px;
-    
-}
-.item-kind:last-child{
-    margin-right: 0;
 }
 
 .internal{
@@ -408,26 +412,36 @@
 
 .list-projects{
    display: flex;
+   flex-wrap: wrap;
+   gap: 30px;
    list-style: none;
    justify-content: center;
    margin: 0;
-  
-   
-   
+   padding-left: 0;
 }
 
 .item-projects{
-  margin-right: 30px;
-  margin-bottom: 30px;
-  border: 1px solid var(--second-border-color);
+  flex-basis: calc((100% - 60px) / 3);
   
 }
-.last {
-    margin-bottom: 94px;
+.item-projects:nth-child(n + 7){
+  padding-bottom: 94px;
 }
+
+.kind-business{
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-bottom: 20px;
+    border: 1px solid #EEEEEE;
+    width: 370px;
+}
+
 .title-project{
     font-family: var(--primary-font);
     font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
     font-weight: var(--bold-font);
     letter-spacing: 0.06em;
     color: var(--primary-color);
@@ -436,11 +450,14 @@
 .kind{
     font-family: var(--primary-font);
     font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
     font-weight: var(--normal-font);
     color: var(--secondery-color);
+    margin-bottom: 4px;
     
 }
 .description{
-    padding-left: 24px;
+    margin: 0;
     
 }
